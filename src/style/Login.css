@@ -1,0 +1,36 @@
+.login {
+  width: 30%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: 4px -1px 25px -8px rgba(0, 0, 0, 0.77);
+}
+.login_form {
+  width: 65%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.login_logo {
+  color: #fd4c82;
+  font-size: 2.5rem;
+  padding: 0 5px;
+}
+.logo_text {
+  font-size: 1.5rem;
+}
+.care {
+  color: #fd4c82;
+}
+
+.accounts {
+  font-size: 15px;
+}
+.login_email {
+  outline: none;
+}
+@media screen and (max-width: 746px) {
+  .login {
+    width: 70%;
+  }
+}

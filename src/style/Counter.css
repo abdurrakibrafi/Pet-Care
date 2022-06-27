@@ -1,0 +1,21 @@
+.counter_main {
+  background-color: #fd4c82;
+  color: white;
+  padding: 50px;
+}
+.counter_row {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.count {
+  font-size: 3.6rem;
+}
+.counter_p {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 786px) {
+  .counter_main {
+    padding: 60px;
+  }
+}

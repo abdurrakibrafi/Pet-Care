@@ -1,0 +1,51 @@
+.main-faq {
+  margin-top: 8rem;
+}
+.faq_row {
+  width: 90%;
+  margin: auto;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: "Kanit", sans-serif;
+  padding: 8px 0px;
+}
+.img-fluid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  margin: 7rem 2rem;
+}
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: #fd4c82;
+  color: white;
+}
+.accordion-header {
+  overflow: hidden;
+  box-shadow: -2px 12px 65px -27px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.accordion-button {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(100%);
+}
+.accordion-body {
+  margin: 13px;
+}
+@media screen and (max-width: 786px) {
+  .img-fluid {
+    margin: 4rem 0rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .img-fluid {
+    height: 55vh;
+  }
+}

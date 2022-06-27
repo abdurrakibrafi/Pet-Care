@@ -1,0 +1,63 @@
+.from_main {
+  margin-top: 100px;
+}
+.forms_row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.from_img {
+  width: 600px;
+  height: 560px;
+}
+.from_section {
+  background-color: #fd4c82;
+  width: 100%;
+  height: auto;
+}
+.section_all {
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+}
+.email_size {
+  width: 83%;
+}
+.textarea_size {
+  width: 83%;
+  outline: none;
+}
+.submitbtn {
+  margin-top: 30px;
+  width: 83%;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.from_title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+@media screen and (max-width: 786px) {
+  .forms_row {
+    flex-direction: column;
+  }
+  .col_1 {
+    display: none;
+  }
+  .email_size {
+    width: 100%;
+  }
+  .textarea_size {
+    width: 100%;
+  }
+  .submitbtn {
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+}

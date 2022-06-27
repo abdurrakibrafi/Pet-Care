@@ -1,0 +1,153 @@
+.Navbar {
+  height: 65px;
+  width: 100%;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 3px 33px 1px rgba(0, 0, 0, 0.18);
+}
+.nav-logo {
+  color: black !important;
+  font-size: 1.8rem !important;
+  margin-left: 7rem !important;
+}
+.logo {
+  color: #fd4c82;
+  font-size: 2rem;
+  padding: 0 5px;
+}
+.care {
+  color: #fd4c82;
+}
+.Navbar > .nav-logo {
+  font-weight: 700;
+  font-size: 21px;
+  margin: 15px;
+  color: #ffffff;
+}
+.Navbar > .nav-items {
+  margin: auto;
+  padding-left: 21rem;
+  display: flex;
+}
+.Navbar > .nav-items > a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 15px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.Navbar > .nav-items > a:hover {
+  opacity: 1;
+}
+
+.Navbar > .nav-items > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  width: 0;
+  height: 2px;
+  background: #fd4c82;
+  transition: all 0.45s;
+}
+
+.Navbar > .nav-items > a:hover::before {
+  width: 100%;
+}
+
+.Navbar > .nav-toggle {
+  display: none;
+}
+.navbar_login {
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .nav-logo {
+    margin-left: 1rem !important;
+  }
+  .Navbar > .nav-items {
+    padding-left: 1rem;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    background: #fd4c82;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 0.45s;
+    z-index: 4;
+    color: white;
+  }
+
+  .Navbar > .nav-items > a::before {
+    background: transparent;
+  }
+
+  .Navbar > .nav-items.open {
+    transform: translateX(0);
+  }
+
+  .Navbar > .nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-toggle > .bar {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #fd4c82;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .nav-toggle > .bar::before,
+  .nav-toggle > .bar::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #fd4c82;
+    border-radius: 2px;
+    transition: all 0.45s ease-in-out;
+  }
+
+  .nav-toggle > .bar::before {
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+  }
+
+  .nav-toggle > .bar::after {
+    width: 32px;
+    transform: translateY(8px);
+  }
+
+  .nav-toggle.open > .bar {
+    transform: translateX(-40px);
+    background: transparent;
+  }
+
+  .nav-toggle.open > .bar::before {
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+  }
+
+  .nav-toggle.open > .bar::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+  }
+}
