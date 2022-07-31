@@ -26,10 +26,7 @@ li {
 .footer_title {
   position: relative;
 }
-.top {
-  background-color: #fd4c82;
-  color: white;
-}
+
 .footer_title::after {
   content: "";
   background-color: #fd4c82;
