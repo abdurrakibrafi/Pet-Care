@@ -11,7 +11,13 @@ function About() {
   return (
     <Container className="about">
       <Row className="about_row">
-        <Col lg={6} sm={12}>
+        <Col
+          lg={6}
+          sm={12}
+          data-aos="fade-right"
+          data-aos-duration="5000"
+          data-aos-delay="1000"
+        >
           <img className="about_img img-fluid" src={img} alt="about" />
         </Col>
         <Col className="col_2" lg={6} sm={12}>

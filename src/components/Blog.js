@@ -9,7 +9,11 @@ function Blog() {
     <Container className="blog">
       <h2 className="blog_title text-center">Our blog</h2>
       <Row className="blog_row">
-        <Col className="blog_flex d-flex">
+        <Col
+          className="blog_flex d-flex"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {blogs.map((current) => {
             const { title, imgSrc, info, id } = current;
             return (

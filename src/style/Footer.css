@@ -26,6 +26,10 @@ li {
 .footer_title {
   position: relative;
 }
+.top {
+  background-color: #fd4c82;
+  color: white;
+}
 .footer_title::after {
   content: "";
   background-color: #fd4c82;
@@ -50,6 +54,9 @@ li {
 }
 .hr_style {
   margin-top: 80px;
+}
+.footer_p {
+  color: rgba(255, 255, 255, 0.792);
 }
 @media (max-width: 700px) {
   .footer_row {

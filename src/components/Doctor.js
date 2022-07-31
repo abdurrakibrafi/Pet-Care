@@ -11,6 +11,7 @@ function Doctor() {
             className="img-fluid2 img-thumbnail "
             src={Doctors}
             alt="Doctors"
+            data-aos="flip-left"
           />
         </Col>
         <Col className="doctor_col2">

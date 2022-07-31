@@ -6,10 +6,12 @@ import {
 import { faPaperPlane, faPaw } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Container, Form, Row } from "react-bootstrap";
+import ScrollToTop from "react-scroll-to-top";
 import "../style/Footer.css";
 function Footer() {
   return (
     <Container className="footer text-white" fluid>
+      <ScrollToTop smooth top="100" color="white" className="top" />;
       <Row className="footer_row">
         <Col className="mt-4" lg={4} sm={12}>
           <span className="logo_texts">
@@ -48,7 +50,10 @@ function Footer() {
           </div>
         </Col>
         <hr className="hr_style"></hr>
-        <p className="text-center">Create by Rafi</p>
+        <p className="text-center footer_p ">
+          Copyright ©2022 All rights reserved | This template is made with by
+          RaFi
+        </p>
       </Row>
     </Container>
   );
