@@ -11,7 +11,7 @@ import "../style/Footer.css";
 function Footer() {
   return (
     <Container className="footer text-white" fluid>
-      <ScrollToTop smooth top="100" />;
+      <ScrollToTop smooth top="100" />
       <Row className="footer_row">
         <Col className="mt-4" lg={4} sm={12}>
           <span className="logo_texts">
